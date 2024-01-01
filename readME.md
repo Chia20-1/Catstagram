@@ -15,7 +15,7 @@ Let's work out the Functionality first
 By adding this tag: onerror="this.onerror = null; this.src = './missingcat.png'
 14. Do I need to add ID for each catContainer?
 <br>
-Troubleshoot tips
+Troubleshoot tips<br>
 15. When doing it onload , the () function, fetchData() is await, then can add async
 16. Not sure about variable, put a placeholder and then console log it
 <br>
