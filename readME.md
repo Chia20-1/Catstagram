@@ -1,4 +1,4 @@
-This is a webpage fetching cat api details and printing it our for user to view.<br>
+This is a webpage fetching cat api details and printing it out for user to view.<br>
 The intention is for DOM and API practice.
 
 Pseudocode in building our the functionality (jotting down thought process)
