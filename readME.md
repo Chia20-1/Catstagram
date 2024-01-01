@@ -14,11 +14,11 @@ Let's work out the Functionality first
 13. How to do the checking if fetching image has failed > error image
 By adding this tag: onerror="this.onerror = null; this.src = './missingcat.png'
 14. Do I need to add ID for each catContainer?
-
+<br>
 Troubleshoot tips
 15. When doing it onload , the () function, fetchData() is await, then can add async
 16. Not sure about variable, put a placeholder and then console log it
-
+<br>
 17. Testing with 3 items in html and css for styling
 
 18. Media-query is only screen size
