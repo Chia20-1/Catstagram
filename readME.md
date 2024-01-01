@@ -1,4 +1,7 @@
-Let's work out the Functionality first
+This is a webpage fetching cat api details and printing it our for user to view.<br>
+The intention is for DOM and API practice.
+
+Pseudocode in building our the functionality (jotting down thought process)
 1. Fetch the data https://api.thecatapi.com/v1/breeds
 2. Sort the data into image, name, description.
 3. Handling edge cases: If cat image missing: onerror="this.onerror=null; this.src='./missingcat.png' at html
