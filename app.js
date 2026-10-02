@@ -31,7 +31,11 @@ function printData(data) {
     // Printing data to the respective elements
     catImage.src = `https://cdn2.thecatapi.com/images/${data.reference_image_id}.jpg`
     catImage.setAttribute("alt", "data.name")
-    catImage.setAttribute("onerror", "this.onerror=null; this.src='./missingcat.png'")
+    catImage.onerror = () => {
+        catImage.onerror = null;
+        catImage.classList.add("cat__image--fallback");
+        catImage.src = "./missingcat.png";
+    };
     catName.textContent = data.name
     catDescription.textContent = data.description
 

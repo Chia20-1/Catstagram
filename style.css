@@ -26,13 +26,20 @@
 }
 
 .cat__image {
+    display: block;
     width: 100%;
     height: 180px;
     object-fit: cover;
 }
 
+.cat__image--fallback {
+    object-fit: contain;
+    object-position: center;
+}
+
 .image__container{
     height: 180px;
+    flex-shrink: 0;
     max-width: 100%;
     overflow: hidden;
     margin-bottom: 0.4rem;
