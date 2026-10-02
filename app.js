@@ -2,7 +2,14 @@ const ENDPOINT = "https://api.thecatapi.com/v1/breeds"
 
 async function fetchData() {
     try {
-        const response = await fetch(ENDPOINT)
+        const response = await fetch(ENDPOINT, {
+			headers: {
+				"x-api-key": "live_ajZvPKn4l1N0tqD84oaOKkaLt54VrwWqd2FzwDTk0slyuoZefk7psLfelSrk6g02"
+			}
+		})
+		if (!response.ok) {
+    		throw new Error(`Cat API request failed: ${response.status}`)
+		}
         const data = await response.json()
         console.log(data)
         return data;
