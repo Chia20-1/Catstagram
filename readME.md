@@ -47,22 +47,6 @@ python3 -m http.server 8000
 
 Open [http://localhost:8000](http://localhost:8000) in your browser. Keep the terminal running while using the application, and press `Ctrl+C` to stop the server.
 
-### API Authentication
-
-The checked-in `app.js` requests the breeds endpoint without an API key. If authentication is needed for your account, add an `x-api-key` header to the existing fetch call for local testing:
-
-```js
-const response = await fetch(ENDPOINT, {
-    headers: {
-        "x-api-key": "YOUR_API_KEY"
-    }
-});
-```
-
-Do not commit a real API key. Browser JavaScript exposes keys to visitors; a public deployment should send authenticated requests through a backend that stores the key securely.
-
-See [The Cat API authentication documentation](https://docs.thecatapi.com/docs/authorization) for details.
-
 ## Project Structure
 
 ```text
